@@ -1,4 +1,5 @@
 import antfu from '@antfu/eslint-config';
+import unocss from '@unocss/eslint-config/flat'
 
 /* Using custom configuration of Antfu's code style: https://github.com/antfu/eslint-config */
 export default antfu(
@@ -36,4 +37,5 @@ export default antfu(
 			'style/semi': ['error', 'always'],
 		},
 	},
+	unocss
 );

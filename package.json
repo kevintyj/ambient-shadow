@@ -25,16 +25,24 @@
 		"ci": "pnpm run lint:es && pnpm run build"
 	},
 	"dependencies": {
+		"@solidjs/router": "^0.9.1",
+		"@unocss/reset": "^0.57.6",
 		"solid-js": "^1.8.5"
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "^2.0.0",
 		"@commitlint/cli": "^18.4.2",
 		"@commitlint/config-conventional": "^18.4.2",
+		"@iconify-json/bi": "^1.1.20",
+		"@unocss/eslint-config": "^0.57.6",
+		"@unocss/preset-attributify": "^0.57.6",
+		"@unocss/preset-icons": "^0.57.6",
+		"@unocss/preset-uno": "^0.57.6",
 		"eslint": "^8.54.0",
 		"husky": "^8.0.3",
 		"lint-staged": "^15.1.0",
 		"typescript": "^5.2.2",
+		"unocss": "^0.57.6",
 		"vite": "^5.0.0",
 		"vite-plugin-solid": "^2.7.2"
 	},

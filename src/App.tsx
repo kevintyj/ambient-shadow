@@ -1,39 +1,49 @@
-import { createSignal } from 'solid-js';
-import solidLogo from './assets/solid.svg';
-import viteLogo from '/vite.svg';
+import { onMount } from 'solid-js';
 import './App.css';
+import { Route, Routes } from '@solidjs/router';
+import { Toaster } from 'solid-toast';
+import HomePage from './pages/home.tsx';
 
 function App() {
-	const [count, setCount] = createSignal(0);
+	onMount(() => {
+		let ASCII = `                                                  
+    █████   ███    ███ ██████  ██ ███████ ███    ██ ████████       
+    ██   ██ ████  ████ ██   ██ ██ ██      ████   ██    ██    
+    ███████ ██ ████ ██ ██████  ██ █████   ██ ██  ██    ██    
+    ██   ██ ██  ██  ██ ██   ██ ██ ██      ██  ██ ██    ██    
+    ██   ██ ██      ██ ██████  ██ ███████ ██   ████    ██    
+    `;
+
+		ASCII += `\n    Using Ambient at work? Work with me on your next project!
+    https://kevintyj.com
+    `;
+		// eslint-disable-next-line no-console
+		console.log(`%c${ASCII}`, `font-family: monospace; color: #F13D52; `);
+	});
 
 	return (
 		<>
-			<div>
-				<a href="https://vitejs.dev" target="_blank">
-					<img src={viteLogo} class="logo" alt="Vite logo" />
-				</a>
-				<a href="https://solidjs.com" target="_blank">
-					<img src={solidLogo} class="logo solid" alt="Solid logo" />
-				</a>
+			<Toaster
+				position="bottom-right"
+				gutter={8}
+				containerClassName=""
+				containerStyle={{}}
+				toastOptions={{
+					className: '',
+					duration: 2000,
+				}}
+			/>
+			<div class="z-50 min-h-screen flex flex-col justify-between bg-white dark:bg-[#181819]">
+				<main role="main" class="my-auto lg:px-4">
+					<div class="h-14">
+					</div>
+					<Routes>
+						<Route path="/" component={HomePage} />
+					</Routes>
+					<div class="h-20">
+					</div>
+				</main>
 			</div>
-			<h1>Vite + Solid</h1>
-			<div class="card">
-				<button onClick={() => setCount(count => count + 1)}>
-					count is
-					{' '}
-					{count()}
-				</button>
-				<p>
-					Edit
-					{' '}
-					<code>src/App.tsx</code>
-					{' '}
-					and save to test HMR
-				</p>
-			</div>
-			<p class="read-the-docs">
-				Click on the Vite and Solid logos to learn more
-			</p>
 		</>
 	);
 }
