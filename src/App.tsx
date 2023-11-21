@@ -1,7 +1,6 @@
 import { onMount } from 'solid-js';
 import './App.css';
 import { Route, Routes } from '@solidjs/router';
-import { Toaster } from 'solid-toast';
 import HomePage from './pages/home.tsx';
 
 function App() {
@@ -23,16 +22,6 @@ function App() {
 
 	return (
 		<>
-			<Toaster
-				position="bottom-right"
-				gutter={8}
-				containerClassName=""
-				containerStyle={{}}
-				toastOptions={{
-					className: '',
-					duration: 2000,
-				}}
-			/>
 			<div class="z-50 min-h-screen flex flex-col justify-between bg-white dark:bg-[#181819]">
 				<main role="main" class="my-auto lg:px-4">
 					<div class="h-14">
