@@ -1,8 +1,8 @@
 // uno.config.ts
 import { defineConfig } from 'unocss'
-import {presetUno} from "@unocss/preset-uno";
-import {presetAttributify} from "@unocss/preset-attributify";
-import presetIcons from "@unocss/preset-icons";
+import presetUno from '@unocss/preset-uno';
+import presetAttributify from '@unocss/preset-attributify';
+import presetIcons from '@unocss/preset-icons';
 
 export default defineConfig({
   presets: [
@@ -12,8 +12,6 @@ export default defineConfig({
       extraProperties: {
         'display': 'inline-block',
         'vertical-align': 'middle',
-        'width': '2em',
-        'height': '2em'
       },
     }),
   ],

@@ -28,6 +28,9 @@ devDependencies:
   '@iconify-json/bi':
     specifier: ^1.1.20
     version: 1.1.20
+  '@types/node':
+    specifier: ^20.9.3
+    version: 20.9.3
   '@unocss/eslint-config':
     specifier: ^0.57.6
     version: 0.57.7(eslint@8.54.0)(typescript@5.3.2)
@@ -57,7 +60,7 @@ devDependencies:
     version: 0.57.7(postcss@8.4.31)(vite@5.0.1)
   vite:
     specifier: ^5.0.0
-    version: 5.0.1(@types/node@18.18.11)
+    version: 5.0.1(@types/node@20.9.3)
   vite-plugin-solid:
     specifier: ^2.7.2
     version: 2.7.2(solid-js@1.8.5)(vite@5.0.1)
@@ -1209,6 +1212,12 @@ packages:
       undici-types: 5.26.5
     dev: true
 
+  /@types/node@20.9.3:
+    resolution: {integrity: sha512-nk5wXLAXGBKfrhLB0cyHGbSqopS+nz0BUgZkUQqSHSSgdee0kssp1IAqlQOu333bW+gMNs2QREx7iynm19Abxw==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
+
   /@types/normalize-package-data@2.4.4:
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
     dev: true
@@ -1367,7 +1376,7 @@ packages:
       '@unocss/core': 0.57.7
       '@unocss/reset': 0.57.7
       '@unocss/vite': 0.57.7(vite@5.0.1)
-      vite: 5.0.1(@types/node@18.18.11)
+      vite: 5.0.1(@types/node@20.9.3)
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -1590,7 +1599,7 @@ packages:
       chokidar: 3.5.3
       fast-glob: 3.3.2
       magic-string: 0.30.5
-      vite: 5.0.1(@types/node@18.18.11)
+      vite: 5.0.1(@types/node@20.9.3)
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -4339,7 +4348,7 @@ packages:
       '@unocss/transformer-directives': 0.57.7
       '@unocss/transformer-variant-group': 0.57.7
       '@unocss/vite': 0.57.7(vite@5.0.1)
-      vite: 5.0.1(@types/node@18.18.11)
+      vite: 5.0.1(@types/node@20.9.3)
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -4396,13 +4405,13 @@ packages:
       merge-anything: 5.1.7
       solid-js: 1.8.5
       solid-refresh: 0.5.3(solid-js@1.8.5)
-      vite: 5.0.1(@types/node@18.18.11)
+      vite: 5.0.1(@types/node@20.9.3)
       vitefu: 0.2.5(vite@5.0.1)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite@5.0.1(@types/node@18.18.11):
+  /vite@5.0.1(@types/node@20.9.3):
     resolution: {integrity: sha512-T2plNaDK+olJPoxwmpGxKcI+BScI2OAulAtRUAljTrb6QxSqJShWMUT+7ilXcBHTMAzbYHfWROuC1J/g2oRhEw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -4430,7 +4439,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.18.11
+      '@types/node': 20.9.3
       esbuild: 0.19.7
       postcss: 8.4.31
       rollup: 4.5.0
@@ -4446,7 +4455,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 5.0.1(@types/node@18.18.11)
+      vite: 5.0.1(@types/node@20.9.3)
     dev: true
 
   /vue-eslint-parser@9.3.2(eslint@8.54.0):
